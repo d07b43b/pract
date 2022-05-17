@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="ipad.css">
+</head>
+<body>
+    <header>
+            <div class="popup">
+                <a href="#">Главная</a>
+                <a id="show_add_photo" href="#">Фото</a>
+                <a href="#">Посты</a>
+                <a href="#">Личный кабинет</a>
+        </div>
+        <div class="mobile-icon">
+            <img src="menu.png" alt="">
+        </div>
+    </header>
+    <h1>Галерея</h1>
+<div id="grid">
+    <div class="photo">
+        <img src="https://picsum.photos/seed/1/1920/1080" alt="">
+        <p>фоточка №1</p>
+    </div>
+    <div class="photo">
+        <img src="https://picsum.photos/seed/2/1920/1080" alt="">
+        <p>фоточка №2</p>
+    </div>
+    <div class="photo">
+        <img src="https://picsum.photos/seed/3/1920/1080" alt="">
+        <p>фоточка №3</p>
+    </div>
+    <div class="photo">
+        <img src="https://picsum.photos/seed/4/1920/1080" alt="">
+        <p>фоточка №4</p>
+    </div>
+
+
+</div>
+
+<div id="add_new_photo">
+<div>
+   <input id="new_photo_src" type="text" placeholder="Картинка">
+   <input id="new_photo_text" type="text" placeholder="Подпись">
+   <button id="add_photo">Добавить</button>
+   <button id="cancle">Отмена</button>
+</div>
+</div>
+
+
+<div id="popup_photo">
+    <img src="" alt="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+<!--
+
+a.	Как описываются функции в JS?
+
+коммандой function(){
+
+}
+
+b.	Как добавит обработчик события в JS?
+click – происходит, когда кликнули на элемент левой кнопкой мыши (на устройствах с сенсорными экранами оно происходит при касании).
+contextmenu – происходит, когда кликнули на элемент правой кнопкой мыши.
+mouseover / mouseout – когда мышь наводится на / покидает элемент.
+mousedown / mouseup – когда нажали / отжали кнопку мыши на элементе.
+mousemove – при движении мыши.
+https://learn.javascript.ru/introduction-browser-events
+
+c.	Как добавить/удалить класс HTML-элемента в JS?
+
+Свойство classList возвращает список классов элемента. Так же в этом свойстве присутствует 4 метода:
+
+add – добавление класса;
+remove – удаление класса;
+toggle – переключение класса;
+contains – проверка наличия класса у элемента.
+
+d.	Как создать новые элементы в JS?
+
+var element = document.createElement(tagName, [options]);
+element — созданный объект элемента.
+tagName — строка, указывающая элемент какого типа должен быть создан. nodeName создаётся и инициализируется со значением tagName.
+options — необязательный параметр, объект ElementCreationOptions, который может содержать только поле is, 
+указывающее имя пользовательского элемента, 
+созданного с помощью customElements.define() (см. Веб-компоненты).
+
+e.	Как получать значение полей ввода в JS?
+
+<input id="elem1" type="text" name="quantity" placeholder="Количество">
+<input id="butt" type="button" value="Кнопка"/><br><br>
+<div id="str"></div>
+
+butt.onclick = function() {
+    var val = document.getElementById('elem1').value;
+    document.getElementById('str').innerHTML="Вы ввели: "+val;
+};
+
+
+f.	Что делает свойство box-sizing?
+https://developer.mozilla.org/ru/docs/Web/CSS/box-sizing
+-->
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+a.	Какой синтаксис условного оператора в JS?
+
+&& (И) , || (ИЛИ) ,! (НЕ)
+
+b.	Что является логическими значениями в JS?
+
+&& (И) , || (ИЛИ) ,! (НЕ)
+c.	Как работает тернарное условие в JS?
+
+if (condition) {
+  code to run if condition is true
+} else {
+  run some other code instead
+}
+
+d.	Какие циклы есть в JS?
+if else for while
+e.	Как в JS получать доступ к элементам внутри других элементов?
+
+-->
